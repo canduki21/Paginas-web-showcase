@@ -277,6 +277,43 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* =====================
+   GALERIA INSTAGRAM
+   ===================== */
+.galeria {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.ig-grid .instagram-media {
+  width: 100% !important;
+  min-width: unset !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg3) !important;
+}
+
+.galeria-cta {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .ig-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto 40px;
+  }
+}
+
+/* =====================
    SERVICIOS
    ===================== */
 .servicios {
